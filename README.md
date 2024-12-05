@@ -1,4 +1,4 @@
-# Chat with Documents
+# Chat with Multiple PDF/PPTX Documents
 
 A Streamlit app that allows users to upload PDF and PPTX files, extract text from them, and then ask questions based on the content of the uploaded documents. The app uses Google Generative AI and Langchain to generate responses.
 
@@ -22,6 +22,15 @@ Before running the app, make sure you have the following dependencies:
 - python-pptx
 - FAISS
 - dotenv
+
+## How it Works
+- Upload PDF/PPTX Files: You can upload multiple PDF and PPTX files through the sidebar.
+
+- Process Documents: The app will extract text from the uploaded documents. It then splits the text into manageable chunks and indexes it using FAISS.
+
+- Ask Questions: Once the documents are processed, you can ask questions about the content. The app will use the indexed documents to find relevant information and respond.
+
+- Generate Responses: The app uses the Google Generative AI model (gemini-pro) to generate answers based on the context of the uploaded documents.
 
 You can install the dependencies using pip:
 
